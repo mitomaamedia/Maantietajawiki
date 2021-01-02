@@ -261,6 +261,8 @@ $wgGroupPermissions['ylin-taho']['editsemiprotected'] = true;
 $wgGroupPermissions['ylin-taho']['editprotected'] = true;
 $wgGroupPermissions['ylin-taho']['oversight'] = true;
 $wgGroupPermissions['ylin-taho']['suppressrevision'] = true;
+$wgGroupPermissions['ylin-taho']['import'] = true;
+$wgGroupPermissions['ylin-taho']['massmessage'] = true;
 $wgGlobalUserGroups = array(
     'bot-global',
     'rollback-global',
