@@ -284,7 +284,18 @@ $wgGroupPermissions['projectmember']['projectmember-powers'] = true;
 
 // add projectmember-powers to the 'basic' grant so we can use our projectmember powers over an API request
 $wgGrantPermissions['basic']['projectmember-powers'] = true;
-
+wfLoadExtension( 'TranslationNotifications' );
+$wgTranslationNotificationsContactMethods = [
+	'email' => true,
+	'talkpage' => true,
+	'talkpage-elsewhere' => false,
+];
+$wgGroupPermissions['sysop']['translate-manage'] = true;
+$wgGroupPermissions['käännösylläpitäjät']['translate-manage'] = true;
+$wgGroupPermissions['ylin-taho']['translate-manage'] = true;
+wfLoadExtension( 'MassMessage' );
+$wgMassMessageAccountUsername = 'MessengerBot';
+$wgAllowGlobalMessaging = true;
 wfLoadExtensions([
     'TextExtracts',
     'PageImages',
