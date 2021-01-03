@@ -6,7 +6,7 @@
 # See includes/DefaultSettings.php for all configurable settings
 # and their default values, but don't forget to make changes in _this_
 # file, not there.
-#
+# 
 # Further documentation for configuration settings may be found at:
 # https://www.mediawiki.org/wiki/Manual:Configuration_settings
 
@@ -318,6 +318,9 @@ $wgGroupPermissions['ylin-taho']['autoreview'] = true;
 $wgGroupPermissions['ylin-taho']['replacetext'] = true;
 $wgGroupPermissions['ylin-taho']['transcode-status'] = true;
 $wgGroupPermissions['ylin-taho']['view-dump'] = true;
+$wgGroupPermissions['ylin-taho']['globalblock'] = true;
+$wgGroupPermissions['ylin-taho']['globalblock-exempt'] = true;
+$wgGroupPermissions['ylin-taho']['globalblock-whitelist'] = true;
 $wgGroupPermissions['ylin-taho']['generate-dump'] = true;
 $wgGroupPermissions['ylin-taho']['delete-dump'] = true;
 $wgGroupPermissions['ylin-taho']['applychangetags'] = true;
@@ -435,6 +438,7 @@ $wgTranslationNotificationsContactMethods = [
 $wgGroupPermissions['sysop']['translate-manage'] = true;
 $wgGroupPermissions['käännösylläpitäjät']['translate-manage'] = true;
 $wgGroupPermissions['ylin-taho']['translate-manage'] = true;
+wfLoadExtension( 'GlobalBlocking' );
 wfLoadExtension( 'MassMessage' );
 $wgMassMessageAccountUsername = 'MessengerBot';
 $wgAllowGlobalMessaging = true;
