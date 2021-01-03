@@ -20,6 +20,8 @@ $wgAllowDisplayTitle = true;
 $wgAllowHTMLEmail = true;
 $wgAllowUserCssPrefs = true;
 $wgSignatureValidation = 'warning';
+$wgLogRestrictions["newusers"] = 'sysop';
+$wgLogRestrictions["newusers"] = 'ylin-taho';
 
 ## Uncomment this to disable output compression
 # $wgDisableOutputCompression = true;
