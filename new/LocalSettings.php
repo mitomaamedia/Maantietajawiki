@@ -117,6 +117,11 @@ $wgReservedUsernames[] = 'Jumalauta';
 $wgReservedUsernames[] = 'Helvetti';
 $wgReservedUsernames[] = 'horo';
 $wgReservedUsernames[] = 'helvetin apina';
+$wgInvalidUsernameCharacters = '@#€';
+$wgInvalidUsernameCharacters = '!?$';
+$wgInvalidUsernameCharacters = '"%&';
+$wgInvalidUsernameCharacters = '§£¤';
+$wgInvalidUsernameCharacters = '[]}';
 
 
 ## Uncomment this to disable output compression
