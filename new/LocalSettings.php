@@ -19,6 +19,7 @@ $wgEdititis = true;
 $wgAllowDisplayTitle = true;
 $wgAllowHTMLEmail = true;
 $wgAllowUserCssPrefs = true;
+$wgSignatureValidation = 'warning';
 
 ## Uncomment this to disable output compression
 # $wgDisableOutputCompression = true;
