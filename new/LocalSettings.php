@@ -568,6 +568,16 @@ wfLoadExtension( 'Capiunto' );
 $wgScribuntoDefaultEngine = 'luastandalone';
 $wgScribuntoUseGeSHi = true;
 $wgScribuntoUseCodeEditor = true;
+require_once "$IP/extensions/Poll/Poll.php";
+
+$wgGroupPermissions['pollhenkilöstö']['poll-admin'] = true;
+$wgGroupPermissions['pollhenkilöstö']['poll-create'] = true;
+$wgGroupPermissions['pollhenkilöstö']['poll-vote'] = true;
+$wgGroupPermissions['pollhenkilöstö']['poll-score'] = true;
+$wgGroupPermissions['ylin-taho']['poll-admin'] = true;
+$wgGroupPermissions['ylin-taho']['poll-create'] = true;
+$wgGroupPermissions['ylin-taho']['poll-vote'] = true;
+$wgGroupPermissions['ylin-taho']['poll-score'] = true;
 
 wfLoadExtension('EntitySchema');
 wfLoadExtension('TitleBlacklist');
