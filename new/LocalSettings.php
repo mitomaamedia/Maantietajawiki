@@ -23,6 +23,102 @@ $wgSignatureValidation = 'warning';
 $wgLogRestrictions["newusers"] = 'sysop';
 $wgLogRestrictions["newusers"] = 'ylin-taho';
 
+$wgReservedUsernames = [
+	'MediaWiki default', // Default 'Main Page' and MediaWiki: message pages
+	'Conversion script', // Used for the old Wikipedia software upgrade
+	'Maintenance script', // Maintenance scripts which perform editing, image import script
+	'Template namespace initialisation script', // Used in 1.2->1.3 upgrade
+	'ScriptImporter', // Default user name used by maintenance/importSiteScripts.php
+	'Unknown user', // Used in WikiImporter & RevisionStore for revisions with no author and in User for invalid user id
+	'msg:double-redirect-fixer', // Automatic double redirect fix
+	'msg:usermessage-editor', // Default user for leaving user messages
+	'msg:proxyblocker', // For $wgProxyList and Special:Blockme (removed in 1.22)
+	'msg:sorbs', // For $wgEnableDnsBlacklist etc.
+	'msg:spambot_username', // Used by cleanupSpam.php
+	'msg:autochange-username', // Used by anon category RC entries (parser functions, Lua & purges)
+];
+$wgReservedUsernames[] = 'Pillu';
+$wgReservedUsernames[] = 'Pillu123';
+$wgReservedUsernames[] = 'Pillu1';
+$wgReservedUsernames[] = 'Pillu222';
+$wgReservedUsernames[] = 'Pillu333';
+$wgReservedUsernames[] = 'Pillu2';
+$wgReservedUsernames[] = 'Pillu3';
+$wgReservedUsernames[] = 'Jimmy Wales';
+$wgReservedUsernames[] = 'JimmyW';
+$wgReservedUsernames[] = 'JimmyWales';
+$wgReservedUsernames[] = 'J. Wales';
+$wgReservedUsernames[] = 'WalesJ';
+$wgReservedUsernames[] = 'WalesJimmy';
+$wgReservedUsernames[] = 'Walesin Jimmy';
+$wgReservedUsernames[] = 'Pussy';
+$wgReservedUsernames[] = 'Pussy123';
+$wgReservedUsernames[] = 'Pussy1';
+$wgReservedUsernames[] = 'Pussy2';
+$wgReservedUsernames[] = 'Pussy3';
+$wgReservedUsernames[] = 'Admin';
+$wgReservedUsernames[] = 'Adminstration';
+$wgReservedUsernames[] = 'Adminstrator';
+$wgReservedUsernames[] = 'Police';
+$wgReservedUsernames[] = 'WikiPolice';
+$wgReservedUsernames[] = 'Bot';
+$wgReservedUsernames[] = 'Botti';
+$wgReservedUsernames[] = 'Johtaja';
+$wgReservedUsernames[] = 'Homo';
+$wgReservedUsernames[] = 'Huora';
+$wgReservedUsernames[] = 'Huoranpenikka';
+$wgReservedUsernames[] = 'Huoran penikka';
+$wgReservedUsernames[] = 'Äyssi';
+$wgReservedUsernames[] = 'Idiootti';
+$wgReservedUsernames[] = 'KillYou';
+$wgReservedUsernames[] = 'Kill you';
+$wgReservedUsernames[] = 'Tapan sut';
+$wgReservedUsernames[] = 'TapanSut';
+$wgReservedUsernames[] = 'Fuck';
+$wgReservedUsernames[] = 'Fuck You';
+$wgReservedUsernames[] = 'FuckYou';
+$wgReservedUsernames[] = 'Narttu';
+$wgReservedUsernames[] = 'Bitch';
+$wgReservedUsernames[] = 'Narttu123';
+$wgReservedUsernames[] = 'Narttu1';
+$wgReservedUsernames[] = 'Hell';
+$wgReservedUsernames[] = 'saatana';
+$wgReservedUsernames[] = 'satan';
+$wgReservedUsernames[] = 'Idiot';
+$wgReservedUsernames[] = 'Gay';
+$wgReservedUsernames[] = 'Fuck Gay';
+$wgReservedUsernames[] = 'vitun homo';
+$wgReservedUsernames[] = 'vitunhomo';
+$wgReservedUsernames[] = 'Kulli';
+$wgReservedUsernames[] = 'Dick';
+$wgReservedUsernames[] = 'dick1';
+$wgReservedUsernames[] = 'dick2';
+$wgReservedUsernames[] = 'dick3';
+$wgReservedUsernames[] = 'dick123';
+$wgReservedUsernames[] = 'Trump';
+$wgReservedUsernames[] = 'Donald Trump';
+$wgReservedUsernames[] = 'Trump on homo';
+$wgReservedUsernames[] = 'TrumpOnHomo';
+$wgReservedUsernames[] = 'Sanna Marin';
+$wgReservedUsernames[] = 'MarinOnHuora';
+$wgReservedUsernames[] = 'Sauli Niinistö';
+$wgReservedUsernames[] = 'Niinistö vittu';
+$wgReservedUsernames[] = 'Paska';
+$wgReservedUsernames[] = 'Paska123';
+$wgReservedUsernames[] = 'Perse';
+$wgReservedUsernames[] = 'Paskaperse';
+$wgReservedUsernames[] = 'paska perse';
+$wgReservedUsernames[] = 'Kyrpä';
+$wgReservedUsernames[] = 'Nuole kyrpää';
+$wgReservedUsernames[] = 'imeittees';
+$wgReservedUsernames[] = 'Ime ittees';
+$wgReservedUsernames[] = 'Perkele';
+$wgReservedUsernames[] = 'Jumalauta';
+$wgReservedUsernames[] = 'Helvetti';
+$wgReservedUsernames[] = 'horo';
+$wgReservedUsernames[] = 'helvetin apina';
+
+
 ## Uncomment this to disable output compression
 # $wgDisableOutputCompression = true;
 
