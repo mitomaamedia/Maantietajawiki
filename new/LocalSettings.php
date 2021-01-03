@@ -173,6 +173,11 @@ $wgGrantPermissions['basic']['ipblock-exempt'] = true;
 $wgGroupPermissions['järjestelmänlaajuinen-ylläpitäjä'] = $wgGroupPermissions['bot'];
 # Add the permissions from group "bot"
 
+$wgGroupPermissions['autoconfirmed']['upload_by_url'] = true;
+$wgAllowCopyUploads = true;
+$wgCopyUploadsFromSpecialUpload = true;
+$wgCopyUploadsDomains = array( '*.flickr.com', 'upload.*.gov.uk' );
+
 # Now modify these rights:
 $wgGroupPermissions['sysop']['renameuser'] = true;
 $wgGroupPermissions['nimenvaihtaja']['renameuser'] = true;
@@ -202,6 +207,39 @@ $wgGroupPermissions['järjestelmänlaajuinen-ylläpitäjä']['autopatrol'] = tru
 $wgGroupPermissions['järjestelmänlaajuinen-ylläpitäjä']['edit'] = true;
 $wgGrantPermissions['järjestelmänlaajuinen-ylläpitäjä']['ipblock-exempt'] = true;
 $wgGroupPermissions['palauttaja']['rollback'] = true;
+
+$wgGroupPermissions['kääntäjä']['autoreview'] = true;
+$wgGroupPermissions['ylin-taho']['commentadmin'] = true;
+$wgGroupPermissions['ylin-taho']['autoreview'] = true;
+$wgGroupPermissions['ylin-taho']['replacetext'] = true;
+$wgGroupPermissions['ylin-taho']['transcode-status'] = true;
+$wgGroupPermissions['ylin-taho']['view-dump'] = true;
+$wgGroupPermissions['ylin-taho']['generate-dump'] = true;
+$wgGroupPermissions['ylin-taho']['delete-dump'] = true;
+$wgGroupPermissions['ylin-taho']['applychangetags'] = true;
+$wgGroupPermissions['ylin-taho']['viewincidents'] = true;
+$wgGroupPermissions['ylin-taho']['managewiki'] = true;
+$wgGroupPermissions['ylin-taho']['mwoauthproposeconsumer'] = true;
+$wgGroupPermissions['ylin-taho']['mwoauthupdateownconsumer'] = true;
+$wgGroupPermissions['ylin-taho']['spamblacklistlog'] = true;
+$wgGroupPermissions['ylin-taho']['ajaxpoll-vote'] = true;
+$wgGroupPermissions['ylin-taho']['tboverride-account'] = true;
+$wgGroupPermissions['ylin-taho']['ajaxpoll-view-results'] = true;
+$wgGroupPermissions['ylin-taho']['centralauth-merge'] = true;
+$wgGroupPermissions['ylin-taho']['comment'] = true;
+$wgGroupPermissions['ylin-taho']['commentlinks'] = true;
+$wgGroupPermissions['ylin-taho']['comment-delete-own'] = true;
+$wgGroupPermissions['sysop']['comment-delete-own'] = true;
+$wgGroupPermissions['ylin-taho']['datatransferimport'] = true;
+$wgGroupPermissions['ylin-taho']['validate'] = true;
+$wgGroupPermissions['ylin-taho']['autoreviewrestore'] = true;
+$wgGroupPermissions['ylin-taho']['unreviewedpages'] = true;
+$wgGroupPermissions['ylin-taho']['addvideo'] = true;
+$wgGroupPermissions['ylin-taho']['cs-moderator-delete'] = true;
+$wgGroupPermissions['ylin-taho']['cs-comment'] = true;
+$wgGroupPermissions['ylin-taho']['cs-moderator-edit'] = true;
+
+
 $wgGroupPermissions['ylin-taho']['patrol'] = true;
 $wgGroupPermissions['ylin-taho']['siteadmin'] = true;
 $wgGroupPermissions['ylin-taho']['unwatchedpages'] = true;
