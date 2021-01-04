@@ -15,6 +15,33 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 	exit;
 }
 
+$wgEnableWikibaseRepo = true;
+$wgEnableWikibaseClient = true;
+require_once "$IP/extensions/Wikibase/repo/Wikibase.php";
+require_once "$IP/extensions/Wikibase/repo/ExampleSettings.php";
+require_once "$IP/extensions/Wikibase/client/WikibaseClient.php";
+require_once "$IP/extensions/Wikibase/client/ExampleSettings.php";
+$wgLocalDatabases = [ 'maantiet_mw1999' ];
+$wgWBClientSettings['siteGlobalID'] = 'maantiet_mw1999';
+$wgWBRepoSettings['localClientDatabases'] = array(
+    'en' => 'maantiet_mw1999',
+    'fa' => 'maantiet_mw1999'
+);
+$wmgWikibaseRepoUrl = 'https://wikidata.org';
+
+wfLoadExtension( 'WikibaseQualityConstraints' );
+wfLoadExtension( 'PropertySuggester' );
+wfLoadExtension( 'WikibaseMediaInfo' );
+$wgMediaInfoProperties = true;
+$wgMediaInfoHelpUrls =    ['P180' => 'https://www.wikidata.org/wiki/Property:P180'];
+$wgWBRepoSettings['searchIndexTypes'];
+$wgWBRepoSettings['searchIndexQualifierPropertiesForQuantity'];
+$wgWBRepoSettings['searchIndexPropertiesExclude'];
+$wgWBRepoSettings['searchIndexProperties'];
+wfLoadExtension( 'WikibaseCirrusSearch' );
+
+
+
 $wgEdititis = true;
 $wgAllowDisplayTitle = true;
 $wgAllowHTMLEmail = true;
